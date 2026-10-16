@@ -1,55 +1,57 @@
 ---
 name: communication-playbooks
-description: 全周期沟通话术库 —— 覆盖首触、跟进、offer 谈判、拒信安抚的结构化话术资产，让新人即刻拥有资深招聘的表达水准。
+description: Full-cycle communication playbooks — structured scripts for first touch, follow-ups, offer negotiation and rejection care, giving junior recruiters the voice of a veteran.
 ---
 
-# 全周期沟通话术库（Communication Playbooks）
+**[English](SKILL.md) | [中文](SKILL.zh-CN.md)**
 
-## 适用场景
+# Full-Cycle Communication Playbooks
 
-- 候选人问倒 HR：薪酬结构、团队稳定性、晋升节奏、业务前景
-- offer 谈判陷入拉锯，需要既守住预算又留住人
-- 拒绝候选人时维护雇主品牌，把"拒绝信"写成"关系存款"
+## When to use
 
-## 输入契约
+- A candidate stumps you with questions on compensation structure, team stability, promotion cadence or business outlook
+- An offer negotiation stalls and you must hold the budget line without losing the person
+- You need to reject a candidate while keeping the relationship — a rejection is a deposit, not a write-off
 
-1. **场景**：首触 / 面试前确认 / 面后跟进 / offer 谈判 / 拒信 / 保温
-2. **背景**：岗位、候选人阶段、关键顾虑或争议点
-3. **口径边界**：公司授权可说的（薪酬范围、组织架构）与不可说的
+## Input contract
 
-## 场景化工作流
+1. **Scenario**: first touch / pre-interview confirmation / post-interview follow-up / offer negotiation / rejection / keeping warm
+2. **Context**: role, candidate stage, key concerns or sticking points
+3. **Authorized boundaries**: what the company allows you to say (comp ranges, org facts) and what is off-limits
 
-### offer 谈判
-1. 先诊断：候选人犹豫的真实层级（钱 / title / 风险 / 家庭 / 竞品 offer）
-2. 再匹配：每个层级给出 2–3 个合规筹码与说法
-3. 输出"三步回应法"：共情确认 → 价值重构 → 具体方案与时限
+## Scenario workflows
 
-### 拒信安抚
-1. 三要素：感谢具体化（提到面试中的真实细节）→ 决定明确化（不含糊）→ 关系长期化（人才库 + 未来连接）
-2. 禁止：模板腔、过度抱歉、暗示"你不够好"
+### Offer negotiation
+1. Diagnose first: the candidate's real hesitation layer — money / title / risk / family / competing offer
+2. Match each layer with 2–3 compliant levers and phrasings
+3. Respond in three moves: acknowledge → reframe value → concrete proposal with a deadline
 
-### 面后跟进
-1. 节奏：24h 内给反馈预期，超期必解释
-2. 话术核心是"确定感"：让候选人始终知道自己在漏斗的哪一格
+### Rejection care
+1. Three elements: specific thanks (a real detail from their interview) → a clear decision (no ambiguity) → a long-term bridge (talent pool, future connection)
+2. Never: template tone, excessive apology, or anything implying "you weren't good enough"
 
-## 输出模板
+### Post-interview follow-up
+1. Cadence: set a feedback ETA within 24h; if it slips, explain proactively
+2. The core product is certainty — the candidate should always know where they stand in the funnel
+
+## Output template
 
 ```
-【真实顾虑诊断】……（附判断依据）
-【推荐策略】……
-【话术正文】（可直接发送版本）
-【备选变体】（语气更强硬 / 更柔和各一版）
-【红线提醒】此场景下绝不能说的话
+[Real-concern diagnosis] ... (with evidence)
+[Recommended strategy] ...
+[Script — ready to send] ...
+[Variants] one firmer, one softer
+[Red lines] things you must never say in this scenario
 ```
 
-## 质量红线
+## Quality rules
 
-- 话术再漂亮，不替代真实：不夸大、不隐瞒、不承诺无权承诺之事
-- 所有薪酬数字必须来自授权口径，AI 生成后由 HR 核对再发
-- 拒绝的话术与录用的同等用心——候选人体验没有次要场景
+- A beautiful script never replaces truth: no exaggeration, no concealment, no promises you can't make
+- All compensation figures must come from authorized ranges — HR verifies every AI draft before sending
+- Rejection scripts get the same care as offer scripts; there is no "minor" candidate experience
 
-## 调用示例
+## Example prompt
 
-> 场景：offer 谈判。候选人现薪 45w，我们预算 50–55w，对方竞品给 60w 但团队加班严重。
-> 候选人原话："我还在纠结，主要差在现金部分。"
-> 请按三步回应法出话术。
+> Scenario: offer negotiation. Candidate's current comp 450k; our band 500–550k; a competitor offers 600k with a notorious crunch culture.
+> Candidate's words: "I'm still torn — the gap is mainly in cash."
+> Respond with the three-move method.

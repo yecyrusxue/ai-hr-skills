@@ -1,48 +1,50 @@
 ---
 name: resume-screening
-description: 候选人智能初筛 —— 将岗位画像结构化，让 AI 按统一维度评估简历，输出匹配点、风险点与推荐等级，把 HR 的时间还给最值得看的候选人。
+description: Intelligent resume screening — structure the role profile, let AI evaluate every resume on one rubric, and get match points, risk flags and a recommendation grade for each candidate.
 ---
 
-# 候选人智能初筛（Resume Screening）
+**[English](SKILL.md) | [中文](SKILL.zh-CN.md)**
 
-## 适用场景
+# Intelligent Resume Screening
 
-- 单岗位简历量 > 50 份，人工初筛成为瓶颈
-- 多个 HR/面试官对"什么样的简历算好"口径不一
-- 需要沉淀可复盘的筛选依据，而非凭感觉淘汰
+## When to use
 
-## 输入契约
+- A single opening attracts 50+ resumes and manual screening becomes the bottleneck
+- Multiple HR partners or interviewers apply inconsistent standards for "a good resume"
+- You need an auditable rationale for every reject, not gut feelings
 
-1. **岗位画像**：职位名称、硬性门槛（学历/年限/必备技能）、加分项、团队偏好
-2. **候选人简历**：脱敏后的文本（隐去姓名、电话、身份证号等敏感信息）
-3. **可选**：历史优秀员工的简历特征（作为校准锚点）
+## Input contract
 
-## 工作流程
+1. **Role profile**: title, hard requirements (degree/years/must-have skills), nice-to-haves, team preferences
+2. **Resumes**: anonymized text (strip name, phone, ID number and other sensitive fields)
+3. **Optional**: profiles of past top performers as calibration anchors
 
-1. **岗位解构**：把 JD 拆成「硬门槛 / 核心能力 / 加分项 / 一票否决」四层，缺项时主动向 HR 追问，不臆造
-2. **证据提取**：从简历中抽取与每层对应的客观证据（公司、职级、项目、数据），只引用原文，不脑补
-3. **维度打分**：按 5 维评分（1–5）：经验匹配度、能力深度、稳定性与动机、成长性、风险信号
-4. **结论输出**：给出推荐等级与一句话理由
+## Workflow
 
-## 输出模板
+1. **Deconstruct the role** into four layers: hard gates / core competencies / bonus points / deal-breakers. If information is missing, ask the HR partner — never invent requirements
+2. **Extract evidence**: pull objective facts from the resume (companies, titles, projects, metrics) mapped to each layer. Quote the source text only; never fill gaps by imagination
+3. **Score on 5 dimensions** (1–5): experience match, skill depth, stability & motivation, growth potential, risk signals
+4. **Decide**: output a recommendation grade with a one-line rationale
+
+## Output template
 
 ```
-【推荐等级】A 强烈推荐 / B 推荐 / C 待定 / D 不推荐
-【一句话结论】……
-【匹配点】（最多 3 条，每条注明简历证据）
-【风险点】（最多 3 条，如跳槽频率、经验断层、薪酬预期错配）
-【建议追问】（面试中需要核实的 2–3 个问题）
-【五维评分】经验 x/5 · 能力 x/5 · 动机 x/5 · 成长 x/5 · 风险 x/5
+[Grade] A strongly recommend / B recommend / C borderline / D reject
+[One-line conclusion] ...
+[Match points] (up to 3, each citing resume evidence)
+[Risk flags] (up to 3: job-hopping, gaps, compensation mismatch, ...)
+[Questions to probe] (2–3 items to verify in the interview)
+[Scores] experience x/5 · depth x/5 · motivation x/5 · growth x/5 · risk x/5
 ```
 
-## 质量红线
+## Quality rules
 
-- 不因性别、年龄、地域、婚育状况等受保护特征做任何加减分
-- 简历中没有的信息，输出"未提及"，禁止推测
-- 评分必须附证据，证据必须能在简历原文中找到
+- Never score on protected characteristics: gender, age, location, marital or family status
+- If the resume doesn't say it, output "not mentioned" — never speculate
+- Every score must carry evidence traceable to the resume text
 
-## 调用示例
+## Example prompt
 
-> 岗位：增长团队 HRBP（3–5 年经验，互联网背景，熟悉 OKR 与组织诊断）
-> 硬性门槛：本科以上、3 年以上 HR 经验
-> 请按 SKILL 流程初筛以下 10 份简历（已脱敏），输出推荐等级排序表。
+> Role: HRBP, growth team (3–5 yrs, internet industry, familiar with OKRs and org diagnostics)
+> Hard gates: bachelor's degree, 3+ years HR experience
+> Please screen the following 10 anonymized resumes per this SKILL and output a ranked grade table.

@@ -1,48 +1,50 @@
 ---
 name: talent-mapping
-description: 人才 Mapping —— 围绕目标岗位对目标公司开展系统化人才盘点，生成结构化画像与触达优先级，把零散信息沉淀为可检索的人才库资产。
+description: Talent mapping — run systematic talent landscaping against target companies and roles, producing structured candidate profiles and outreach priorities that compound into a searchable talent pool.
 ---
 
-# 人才 Mapping（Talent Mapping）
+**[English](SKILL.md) | [中文](SKILL.zh-CN.md)**
 
-## 适用场景
+# Talent Mapping
 
-- 重点岗位长期开放，需要建立目标公司的人才全景
-- 新业务启动，需要快速回答"人都在哪、谁值得谈"
-- 人才库需要从"简历堆"升级为"可检索的关系网络"
+## When to use
 
-## 输入契约
+- A critical role stays open long-term and you need the full talent landscape of target companies
+- A new business line launches and you must answer "where are the people, and who is worth a call" fast
+- The talent pool needs to graduate from "a pile of resumes" to a searchable relationship network
 
-1. **目标岗位**：职级、核心能力、对标公司列表
-2. **已有线索**：候选人碎片信息（公开渠道：脉脉/领英/官网/演讲/论文等）
-3. **盘点目的**：即招 / 储备 / 行业情报
+## Input contract
 
-## 工作流程
+1. **Target role**: level, core competencies, list of benchmark companies
+2. **Available clues**: candidate fragments from public sources (Maimai/LinkedIn/company sites/talks/papers)
+3. **Purpose**: immediate hire / pipeline building / market intelligence
 
-1. **组织推演**：根据公开信息推演目标公司的组织架构与关键岗位分布，标注置信度
-2. **画像结构化**：把每个候选人的碎片信息归入统一字段（见输出模板）
-3. **优先级分层**：按「匹配度 × 可触达性 × 流动可能性」三维打标 P0/P1/P2
-4. **缺口识别**：输出尚未覆盖的部门/职级，指导下一轮搜寻
+## Workflow
 
-## 输出模板
+1. **Infer the org chart** of each target company from public information; tag every inference with a confidence level
+2. **Structure profiles**: file each candidate's fragments into the unified fields (see template)
+3. **Prioritize** on three axes — fit × reachability × likelihood to move — and tag P0/P1/P2
+4. **Gap analysis**: list uncovered departments and levels to guide the next search round
+
+## Output template
 
 ```
-【候选人画像】（脱敏编号 P-001）
-· 现状：公司 / 部门 / 职级 / 汇报线（置信度：高/中/低）
-· 背景：履历主线、代表项目、可验证成就
-· 动机信号：在职时长、近期动态、潜在流动窗口
-· 触达建议：渠道、切入话题、引荐路径
-· 优先级：P0 / P1 / P2 + 一句话理由
+[Candidate profile] (anonymized ID, e.g. P-001)
+· Current: company / team / level / reporting line (confidence: high/med/low)
+· Background: career arc, signature projects, verifiable achievements
+· Motivation signals: tenure, recent activity, possible move windows
+· Outreach plan: channel, opening angle, referral path
+· Priority: P0 / P1 / P2 + one-line rationale
 ```
 
-## 质量红线
+## Quality rules
 
-- 仅使用公开渠道信息，不诱导、不欺骗、不越界获取隐私
-- 每条信息标注来源与置信度，禁止把推测写成事实
-- 人才库字段统一，保证"换人维护也能看懂"
+- Public sources only — no pretexting, no deception, no privacy invasion
+- Every fact carries a source and a confidence tag; never present inference as fact
+- Keep pool fields uniform so a teammate can take over without a handover
 
-## 调用示例
+## Example prompt
 
-> 目标岗位：多模态算法专家（P7 级）
-> 对标公司：A、B、C 三家
-> 请基于公开信息，为每家推演相关团队结构，并把以下 20 条线索整理成标准画像，输出 P0 名单。
+> Target role: multimodal algorithm expert (P7 equivalent)
+> Benchmark companies: A, B, C
+> Based on public information, infer the relevant team structures for each company, structure the following 20 clues into standard profiles, and output the P0 shortlist.

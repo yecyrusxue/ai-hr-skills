@@ -1,46 +1,48 @@
 ---
 name: candidate-nurturing
-description: 候选人跟进与保温 —— 为长周期候选人设计节奏化的维护计划，在对的时间用对的内容保持连接，防止优秀人才流失于沉默。
+description: Candidate nurturing — design cadenced care plans for long-cycle candidates, showing up at the right time with the right content so great people never drift away in silence.
 ---
 
-# 候选人跟进与保温（Candidate Nurturing）
+**[English](SKILL.md) | [中文](SKILL.zh-CN.md)**
 
-## 适用场景
+# Candidate Nurturing
 
-- 高端岗位周期 2–6 个月，候选人中途沉默流失
-- 校招 offer 到入职间隔长，被毁约风险高
-- 人才库"僵尸化"：存了几千条，激活率趋近于零
+## When to use
 
-## 输入契约
+- Senior searches run 2–6 months and candidates go silent mid-process
+- Long gap between campus offer and start date — renege risk is high
+- The talent pool is "zombified": thousands of records, near-zero reactivation
 
-1. **候选人清单**：阶段、上次触达时间、顾虑点、兴趣标签
-2. **保温目标**：防流失 / 促决策 / 待重启
-3. **可用素材**：公司近期动态、团队内容、行业洞察、活动邀请
+## Input contract
 
-## 工作流程
+1. **Candidate list**: stage, last touch date, concerns, interest tags
+2. **Nurturing goal**: prevent dropout / drive a decision / reactivate later
+3. **Available material**: company news, team content, industry insight, event invites
 
-1. **分层定频**：按意向度分层（热：3–5 天触达 / 温：2–3 周 / 冷：季度激活），禁止无差别骚扰
-2. **价值供给设计**：每次触达必须携带"对候选人有价值的东西"（洞察、资源、进展、人情），而非"在吗"
-3. **节点编排**：利用自然节点（节日、候选人里程碑、公司里程碑）设计不刻意的出现
-4. **信号升级**：识别回复中的升温信号，提示 HR 何时把"保温"切换为"推进"
+## Workflow
 
-## 输出模板
+1. **Tier the cadence** by warmth — hot: touch every 3–5 days / warm: every 2–3 weeks / cold: quarterly reactivation. Never blast everyone on one schedule
+2. **Design value for every touch**: each message must carry something useful to the candidate (insight, resource, progress, goodwill) — never just "checking in"
+3. **Ride natural moments**: holidays, candidate milestones, company milestones — appear without appearing desperate
+4. **Escalate on signals**: recognize warming signals in replies and tell HR exactly when to switch from nurture to advance
+
+## Output template
 
 ```
-【分层名单】热 x 人 / 温 x 人 / 冷 x 人（附分层理由）
-【30 天保温日历】每人每次触达的：日期 / 渠道 / 内容主题 / 目标
-【触达内容示例】3 条可直接使用的消息
-【升温信号清单】出现哪些行为时应转入推进流程
-【止损线】何种情况下应礼貌退出，保留长期关系
+[Tiered list] hot x / warm x / cold x (with rationale per person)
+[30-day nurture calendar] per person & touch: date / channel / topic / goal
+[Message samples] 3 ready-to-send touches
+[Warming signals] behaviors that should trigger advancement
+[Graceful exit line] when to stop selling and keep only a light annual touch
 ```
 
-## 质量红线
+## Quality rules
 
-- 保温的本质是关系，不是追踪：宁可少触达一次，不可多骚扰一次
-- 内容库里的公司信息必须与对外口径一致
-- 候选人明确拒绝后，转入年度轻触达，不再推销
+- Nurturing is a relationship, not surveillance — one touch too few beats one touch too many
+- Company facts in the content library must match the official external narrative
+- Once a candidate declines clearly, switch to a light annual touch — never keep pitching
 
-## 调用示例
+## Example prompt
 
-> 候选人：P8 算法负责人，offer 谈判后因家庭原因暂缓，说"给我一个月考虑"。
-> 已沉默 12 天。请设计接下来 6 周的保温计划与 3 条触达内容。
+> Candidate: P8 algorithm lead. Paused after offer-stage for family reasons, said "give me a month."
+> Silent for 12 days. Design a 6-week nurture plan with 3 concrete touches.

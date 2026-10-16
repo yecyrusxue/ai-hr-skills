@@ -1,50 +1,52 @@
 ---
 name: exception-handling
-description: 招聘异常处置副驾 —— 面试改期、临时爽约、谈薪僵持、offer 被鸽等突发场景，实时生成应对预案与沟通建议，稳住招聘全链条。
+description: Recruiting exception copilot — real-time contingency plans and communication scripts for reschedules, no-shows, stalled negotiations and revoked offers, keeping the whole funnel stable.
 ---
 
-# 招聘异常处置副驾（Exception Handling Copilot）
+**[English](SKILL.md) | [中文](SKILL.zh-CN.md)**
 
-## 适用场景
+# Exception Handling Copilot
 
-- 面试官/候选人临时改期，多方日程瞬间崩塌
-- 候选人面试爽约、offer 当天反悔、入职前夜失联
-- 业务方突然冻结 HC、面试中候选人情绪失控
+## When to use
 
-## 输入契约
+- An interviewer or candidate reschedules at the last minute and everyone's calendar collapses
+- A candidate no-shows, backs out on signing day, or goes dark the night before onboarding
+- The business suddenly freezes a headcount, or a candidate breaks down mid-interview
 
-1. **突发事件**：一句话描述发生了什么（时间、涉及方、已造成的冲击）
-2. **约束条件**：必须保住的底线（候选人体验 / 面试官时间 / HC 节点）
-3. **可用资源**：备选时段、备选面试官、backup 候选人
+## Input contract
 
-## 工作流程
+1. **The incident**: one sentence on what happened (when, who is involved, the damage so far)
+2. **Hard constraints**: what must be protected (candidate experience / interviewer time / hiring deadline)
+3. **Available resources**: alternative slots, backup interviewers, backup candidates
 
-1. **定级**：按「影响面 × 不可逆性」将事件分为 P0（即刻止损）/ P1（当日处理）/ P2（流程优化）
-2. **止损优先**：先输出 30 分钟内要做的动作，再谈后续
-3. **多方案推演**：给出上/中/下三策，各自的成本、风险与适用前提
-4. **话术配套**：为每个方案生成对应沟通话术（对内对外两版）
-5. **复盘建议**：事件平息后，输出可固化的流程改进点
+## Workflow
 
-## 输出模板
+1. **Triage** on impact × irreversibility: P0 (stop the bleeding now) / P1 (handle today) / P2 (process improvement)
+2. **Stop-loss first**: output the actions for the next 30 minutes before anything else
+3. **Branch three plans**: best / middle / fallback, each with cost, risk and preconditions
+4. **Attach scripts**: for each plan, generate the internal and external messages
+5. **Post-mortem**: once the dust settles, output the process fixes that prevent recurrence
+
+## Output template
 
 ```
-【事件定级】P0 / P1 / P2 + 理由
-【黄金 30 分钟】立即执行的 3 个动作
-【方案推演】
- · 上策：……（成本 / 风险 / 前提）
- · 中策：……
- · 下策：……
-【配套话术】对候选人版 / 对业务方版
-【复盘清单】为避免同类事件，流程上应增加的 1–3 个控制点
+[Triage] P0 / P1 / P2 + rationale
+[Golden 30 minutes] 3 actions to execute immediately
+[Plans]
+ · Best: ... (cost / risk / preconditions)
+ · Middle: ...
+ · Fallback: ...
+[Scripts] candidate-facing / business-facing
+[Post-mortem checklist] 1–3 control points to add to the process
 ```
 
-## 质量红线
+## Quality rules
 
-- 突发中最怕"再制造一个突发"：任何方案先评估次生风险
-- 对内对外口径必须一致，不用信息不对称解燃眉之急
-- 涉及候选人的处置，永远保留对方体面
+- The biggest risk in an incident is causing a second one — assess collateral risk before any move
+- Keep internal and external narratives consistent; never fix today's fire with information asymmetry
+- Whatever the outcome for the candidate, let them keep their dignity
 
-## 调用示例
+## Example prompt
 
-> 突发：明天上午 10 点终面，候选人刚发来消息说家里急事要回外地，时间完全不确定；
-> 而 VP 面试官下周开始出差两周。请给出处置方案。
+> Incident: final round is tomorrow 10:00. The candidate just messaged that a family emergency takes them out of town indefinitely — and the VP interviewer starts a two-week trip next week.
+> Give me the handling plan.

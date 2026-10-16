@@ -1,48 +1,50 @@
 ---
 name: candidate-outreach
-description: 个性化外联与邀约 —— 基于候选人背景生成千人千面的首触信息，统一专业口径，提升到面率与雇主品牌感知。
+description: Personalized candidate outreach — generate genuinely individualized first-touch messages from each candidate's background, keep a consistent professional voice, and lift reply and show-up rates.
 ---
 
-# 个性化外联与邀约（Candidate Outreach）
+**[English](SKILL.md) | [中文](SKILL.zh-CN.md)**
 
-## 适用场景
+# Personalized Candidate Outreach
 
-- 高端岗位冷启动触达，模板消息打开率惨淡
-- 校招季批量邀约，既要效率又要温度
-- 雇主品牌敏感期，每条外联都是公司门面
+## When to use
 
-## 输入契约
+- Cold outreach for senior roles where template messages get ignored
+- Campus season at scale: you need both efficiency and warmth
+- Every message is also an employer-brand touchpoint you can't afford to waste
 
-1. **岗位卖点**：一句话说清"为什么这个机会值得他花时间"（团队/技术挑战/成长空间，忌空话）
-2. **候选人公开背景**：履历主线、代表项目、近期动态（脱敏）
-3. **触达渠道**：BOSS / 脉脉 / 领英 / 邮件 / 短信（不同渠道文体不同）
-4. **目标动作**：约电话 / 约面试 / 加微信 / 投递简历
+## Input contract
 
-## 工作流程
+1. **Role pitch**: one sentence on why this opportunity deserves the candidate's time (team / technical challenge / growth — no empty adjectives)
+2. **Candidate's public background**: career arc, signature projects, recent activity (anonymized)
+3. **Channel**: BOSS Zhipin / Maimai / LinkedIn / email / SMS — each has its own register
+4. **Target action**: book a call / schedule an interview / connect on WeChat / submit a resume
 
-1. **找钩子**：从候选人背景中找 1 个真诚的连接点（项目共鸣、履历转折、共同语境），禁止群发感
-2. **定结构**：钩子（1 句）→ 机会一句话（1–2 句）→ 低压力行动号召（1 句）
-3. **调文体**：按渠道适配字数与语气（BOSS 短平快、邮件正式完整、领英克制专业）
-4. **出三版**：正式版 / 亲切版 / 极简版，供 HR 按人选风格选用
+## Workflow
 
-## 输出模板
+1. **Find the hook**: one sincere connection point from the candidate's background (project resonance, a career turn, shared context). If it could be sent to 100 people unchanged, start over
+2. **Structure**: hook (1 sentence) → the opportunity (1–2 sentences) → low-pressure call to action (1 sentence)
+3. **Tune the register** to the channel: short and direct on BOSS, complete and formal on email, restrained and professional on LinkedIn
+4. **Ship three variants**: formal / warm / minimal, for the HR partner to pick per candidate
+
+## Output template
 
 ```
-【钩子设计】为什么选这个切入点（1 句话说明）
-【正式版】……
-【亲切版】……
-【极简版】（< 80 字）……
-【避坑提示】该候选人背景下应避免的话术（如过度吹捧、薪酬承诺）
+[Hook rationale] why this angle, in one sentence
+[Formal version] ...
+[Warm version] ...
+[Minimal version] (< 80 words) ...
+[Watch-outs] what to avoid with this candidate (flattery, comp promises, ...)
 ```
 
-## 质量红线
+## Quality rules
 
-- 不夸大机会、不虚构团队信息、不承诺未经确认的薪酬
-- 每条信息都必须"能看出是为 TA 写的"，否则重写
-- 尊重边界：候选人未回复时，不生成纠缠话术
+- Never oversell the role, invent team facts, or promise unapproved compensation
+- Every message must visibly be written for this person — otherwise rewrite it
+- Respect silence: if the candidate doesn't reply, do not generate chasing scripts
 
-## 调用示例
+## Example prompt
 
-> 岗位：AI Infra 工程师（卖点：千卡集群实战、顶会团队、快速晋升通道）
-> 候选人：某厂后端 3 年，主导过推荐系统重构，近期在技术社区分享过推理优化文章
-> 渠道：脉脉，目标：约 20 分钟电话。请出三版。
+> Role: AI infra engineer (pitch: hands-on thousand-GPU clusters, top-conference team, fast promotion track)
+> Candidate: 3 yrs backend at a major tech company, led a recommender-system rebuild, recently published an inference-optimization article
+> Channel: Maimai. Goal: a 20-minute call. Three variants, please.
