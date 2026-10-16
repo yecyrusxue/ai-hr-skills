@@ -19,6 +19,22 @@ Author: Xue Ye · HR (Recruiting)
 | 5 | [candidate-nurturing](skills/candidate-nurturing/SKILL.md) | Nurturing | Cadenced care plans that keep long-cycle candidates from going cold |
 | 6 | [exception-handling](skills/exception-handling/SKILL.md) | Exceptions | Real-time playbooks for reschedules, no-shows and stalled negotiations |
 
+## System map
+
+The six skills are not a grab bag — each one takes a position on the recruiting funnel, and all of them share a single input/output contract, so the output of one stage becomes the input of the next:
+
+```
+SOURCING            SCREENING            ENGAGEMENT                OFFER & BEYOND
+──────────────      ───────────────      ─────────────────────     ─────────────────────
+talent-mapping  →   resume-screening  →  candidate-outreach     →  communication-playbooks
+                                         (first touch)             (negotiation · rejection)
+                                              ↓
+                                     candidate-nurturing  ····▶  exception-handling
+                                     (long-cycle care)          (spans every stage)
+```
+
+The funnel is the system: structured input in, structured output out, at every stage.
+
 ## Design principles
 
 - **AI as leverage, humans as judges** — Skills handle structure, scale and memory; HR keeps insight, empathy and the final call

@@ -20,6 +20,22 @@
 | 5 | [candidate-nurturing](skills/candidate-nurturing/SKILL.md) | 跟进保温 | 长周期候选人的节奏化维护，防止流失 |
 | 6 | [exception-handling](skills/exception-handling/SKILL.md) | 异常处置 | 改期/爽约/谈薪僵持等突发场景的预案生成 |
 
+## 体系结构
+
+六个技能不是散点，而是按招聘漏斗一一卡位，共用同一套输入输出契约——上一环节的产出，即下一环节的输入：
+
+```
+寻访                筛选                 触达与沟通                 offer 及之后
+──────────────      ───────────────      ─────────────────────     ─────────────────────
+talent-mapping  →   resume-screening  →  candidate-outreach     →  communication-playbooks
+                                         （首触邀约）              （谈判 · 拒信）
+                                              ↓
+                                     candidate-nurturing  ····▶  exception-handling
+                                     （长周期保温）              （贯穿全流程）
+```
+
+漏斗即体系：每个环节都是结构化输入、结构化输出。
+
 ## 设计理念
 
 - **AI 做杠杆，人做判断**：Skills 负责结构化、规模化、不遗忘；HR 负责洞察、共情与最终决策
