@@ -6,7 +6,7 @@
 
 A collection of AI Skills covering the full recruiting lifecycle, written in the standard `SKILL.md` agent-skill format. Load any of them into Kimi / Claude / GPT and put them to work in minutes.
 
-Author: Xue Ye · HR (Recruiting)
+Author: [@yecyrusxue](https://github.com/yecyrusxue) · HR (Recruiting)
 
 ## Skills
 

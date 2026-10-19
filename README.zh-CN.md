@@ -7,7 +7,7 @@
 
 一套覆盖招聘全生命周期的 AI Skills 合集，采用业界通用的 `SKILL.md` 智能体技能格式编写，可直接加载到 Kimi / Claude / GPT 等大模型中使用。
 
-作者：薛烨 · HR（招聘方向）
+作者：[@yecyrusxue](https://gitee.com/yecyrusxue) · HR（招聘方向）
 
 ## 技能清单
 
